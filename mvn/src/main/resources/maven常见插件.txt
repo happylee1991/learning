@@ -1,0 +1,13 @@
+maven-antrun-plugin
+maven-archetype-plugin
+maven-assembly-plugin
+maven-dependency-plugin
+maven-enforcer-plugin
+maven-help-plugin
+maven-release-plugin
+maven-resources-plugin
+maven-surefire-plugin
+build-helper-maven-plugin
+exec-maven-plugin
+jetty-maven-plugin
+versions-maven-plugin

@@ -1,0 +1,15 @@
+<repositories>
+    <repository>
+        <!-- 配置仓库id名称和url地址 -->
+        <id>central</id>
+        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        <!-- 是否开启发布版构建下载 -->
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <!-- 是否开启快照版构建下载 -->
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+</repositories>
