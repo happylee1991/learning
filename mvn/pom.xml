@@ -8,8 +8,48 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>mvn</artifactId>
+    <version>1.0-RELEASES</version>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.5.6</version>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.13</version>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.3</version>
+        </dependency>
+
+    </dependencies>
+    <distributionManagement>
+        <!-- 部署项目产生的构件到远程仓库需要的信息  -->
+        <repository>
+
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://192.168.1.22:8081/repository/maven-releases/</url>
+        </repository>
+        <!--
+        构件的快照部署到哪里？如果没有配置该元素，默认部署到repository元素配置的仓库，参见distributionManagement/repository元素
+        -->
+        <snapshotRepository>
+            <uniqueVersion/>
+            <id>maven-snapshots</id>
+            <name>maven-snapshots Snapshot Repository</name>
+            <url>http://192.168.1.22:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
 </project>

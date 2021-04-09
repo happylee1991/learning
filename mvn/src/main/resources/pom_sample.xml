@@ -32,7 +32,7 @@
     <url>http://www.baidu.com/banseon</url>  
     <!--项目的详细描述, Maven 产生的文档用。 当这个元素能够用HTML格式描述时（例如，CDATA中的文本会被解析器忽略，就可以包含HTML标签），   
         不鼓励使用纯文本描述。如果你需要修改产生的web站点的索引页面，你应该修改你自己的索引页文件，而不是调整这里的文档。 -->  
-    <description>A maven project to study maven.</description> 
+    <description>App maven project to study maven.</description>
     <!--项目创建年份，4位数字。当产生版权信息时需要使用这个值。 -->  
     <inceptionYear />  
     <!--项目相关邮件列表信息 -->  
@@ -105,7 +105,7 @@
             <!--项目分发的主要方式： repo，可以从Maven库下载 manual， 用户必须手动下载和安装依赖 -->  
             <distribution>repo</distribution>  
             <!--关于license的补充信息 -->  
-            <comments>A business-friendly OSS license</comments>  
+            <comments>App business-friendly OSS license</comments>
         </license>  
     </licenses>  
     <!--SCM(Source Control Management)标签允许你配置你的代码库，供Maven web站点和其它插件使用。 -->  
